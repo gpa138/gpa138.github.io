@@ -83,10 +83,15 @@
             <li>Customizable email templates</li>
             <li>Reliable delivery and tracking</li>
         </ul>
-        <a href="#" class="contact-button">Contact Us</a>
+        <a href="mailto:dev@do-not-reply.co" class="contact-button">Contact Us</a>
     </div>
-    <footer>
-        &copy; 2023 Do-Not-Reply Emailing Services. All rights reserved.
+    <footer id="footer">
+        &copy; <span id="currentYear"></span> Do-Not-Reply Emailing Services. All rights reserved.
     </footer>
+
+    <script>
+        var currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').textContent = currentYear;
+    </script>
 </body>
 </html>
